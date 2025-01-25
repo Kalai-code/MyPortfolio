@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Kalai's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/471cd8a939.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/web_logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">EDA Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Data Analyst</p>
+                    <h1>
+                        Hi, I'm <span>Kalaichitra Rangasamy</span> from Austin, Texas.
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- ---------About Section------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/aboutme_pic.jpg" onContextMenu="return false;">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Data-driven and detail-oriented analyst with 15 months of experience in Numpy Ninja and overall of 10+ years of experience in IT.
+                            Skilled in gathering, analyzing and interpreting large data sets to provide insights and support decision-making. 
+                            With a passion for solving complex problems, I am eager to further implement my skills and improve my data analysis experience.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education & Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, C#, .NET, SQL</li>
+                                <li><span>Databases</span><br>MySQL, PostgreSQL</li>
+                                <li><span>Version Controls</span><br>Git, GitHub</li>
+                                <li><span>Visualization Tools</span><br>Tableau, Power BI</li>
+                                <li><span>Cloud</span><br>Microsoft Azure</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Nov 2023 - Till date</span><br>Data Analyst</li>
+                                <li><span>Jan 2012 - March 2016</span><br>Technology Analyst - Web Developer</li>
+                                <li><span>Jun 2007 - Oct 2011</span><br>Lead Engineer - Full Stack Developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Education</span><br>Bachelor of Computer Science, Anna University, India</li>
+                                <li><span>Certifications</span><br>Microsoft Azure Data Fundamentals (DP-900)<br>
+                                    Microsoft Azure Fundamentals (AZ-900)<br>Google Data Analytics Professional Certificate<br>Google IT Automation with Python Professional Certificate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------EDA Projects Section------------ -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">EDA Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <h2>COVID Dataset</h2>
+                        <p>
+                            No, other movement disorders generally do not directly "lead to" Parkinson's disease, but some movement disorders can share similar symptoms and may increase the risk of developing Parkinson's disease.
+                        </p>
+                        <a href="covid.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>ORCHID Dataset</h2>
+                        <p>
+                            No, other movement disorders generally do not directly "lead to" Parkinson's disease, but some movement disorders can share similar symptoms and may increase the risk of developing Parkinson's disease.
+                        </p>
+                        <a href="orchid.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>PADS Dataset</h2>
+                        <p>
+                            No, other movement disorders generally do not directly "lead to" Parkinson's disease, but some movement disorders can share similar symptoms and may increase the risk of developing Parkinson's disease.
+                        </p>
+                        <a href="pads.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------- Contact Section ------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>  reach.kalaichitra@gmail.com</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="" class="btn" download>Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="text" name="Email" placeholder="Your email ID" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="end">
+                <div class="container"></div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+    
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }    
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");       
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyh9LfB5nFYNokIjDWnYda6McsK0eC_Mb5WpqUib2atoXcgXZzfCOFI_S5FMJm-TPqmxA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const message = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML = "Your message has been sent successfully!!"
+                    setTimeout(function(){
+                        message.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
+    </body>
+</html>
