@@ -28,24 +28,14 @@ body{
     font-size: 28px;
     color: #7eda8c;
 }
-.intro{
-    padding: 10px 4%;
+.intro, .objective, .solution{
+    padding: 8px 4%;
 }
-.intro h2{
+.intro h2, .objective h2, .solution h2{
     padding-right: 10 px;
     color: #178c28;
 }
-.intro p{
-    padding: 8px 3%;
-}
-.objective{
-    padding: 10px 4%;
-}
-.objective h2{
-    padding-right: 10 px;
-    color: #178c28;
-}
-.objective p{
+.intro p,.objective p, .solution p{
     padding: 8px 3%;
 }
 .objective ul{
@@ -53,4 +43,15 @@ body{
 }
 .objective ul li b{
     color: #7ecb89;
+}
+.solution h3{
+    color: #7ecb89;
+    text-decoration: underline;
+    padding: 5px;
+}
+.solution p b{
+    color: #7ecb89;    
+}
+.solution ui li{
+    padding: 3px 6%;
 }
