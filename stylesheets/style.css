@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 html
@@ -68,7 +68,7 @@ nav ul li a:hover::after{
 /* ------ About Me -----*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #e4e4e4;
 
 }
 .row{
@@ -90,7 +90,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: azure;
+    color: #e4e4e4;
 }
 
 .tab-titles{
@@ -126,7 +126,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #178c28;
+    color: #7cd68a;
     font-size: 14px;
 }
 .tab-contents{
@@ -148,7 +148,7 @@ nav ul li a:hover::after{
 .projects-list div{
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -162,8 +162,9 @@ nav ul li a:hover::after{
 
 .projects-list div a{
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
+    color: #dcdbdb;
+    font-size: 14px;
+    font-weight: bold;
     margin-top: 20px;
     display: inline-block;
 }

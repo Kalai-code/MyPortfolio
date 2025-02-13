@@ -4,10 +4,52 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-Edge">
         <meta name="viewport" content="width-device-width,initial-scale=1.0">
-        <title>Kalai's Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">
+        <title>ORCHID Dataset - EDA</title>
+        <link rel="stylesheet" href="stylesheets/orchid_style.css">
         
     </head>
     <body>
+        <div id="header">
+            <div class="container">
+                <h1>Data Analysis on</h1>
+                <h2>
+                    ORCHID - Organ Retrieval and Collection of Health Information for Donation
+                </h2>
+            </div>
+            <div class="intro">
+                <h2>Introduction:</h2>
+                <p>
+                    Organ transplantation is a life-saving procedure for patients with advanced or end-stage diseases.This dataset can be used to identify opportunities to improve current practice, build tools to help OPOs make better decisions, and recommend policy changes to increase procurement.
+                    Downloaded the dataset from <a href="https://physionet.org/content/orchid/2.0.0/" target="_blank" style="color: aquamarine;text-decoration: none;">physionet</a> for learning purposes. 
+                </p>
+            </div>
+            <div class="objective">
+                <h2>Objective:</h2>
+                <p>
+                    To increase transplant opportunities for patients by enhancing the procurement process, I followed a structured data analytics approach:
+                    <ul>
+                        <li><b>Data Understanding & Preparation – </b>Examined the dataset to identify key variables, performed data cleaning to handle missing values and inconsistencies, and transformed the data for better usability.</li>
+                        <li><b>Data Analysis & Processing – </b>Loaded the cleaned data, conducted detailed analysis, and explored patterns in the procurement process.</li>
+                        <li><b>Insights & Visual Storytelling – </b>Generated meaningful insights and created visualizations to effectively increase the organ transplantation, highlighting key trends and correlations.</li>
+                    </ul>  
+                </p>
+            </div>
+            <div class="solution">
+                <h2>Solution:</h2>
+                <h3>Data Understanding</h3>
+                <p><b>Tool Used: Jupyter Notebook</b></p>
+                <p>Thoroughly reviewed the information available on PhysioNet to understand the data collection process. Here are some key observations:</p>
+                <ui>
+                    <li>The dataset is organized around the typical process of organ procurement at an OPO. There are six key steps in the procurement process: referral, evaluation, approach, authorization, procurement, and transplant.</li>
+                    <li>ORCHID consists of ten tables, each of which is provided as a comma separated value (CSV) file. Tables are linked via a unique patient identifier, PatientID. Each table falls into one of three categories: OPO Referrals, OPO Events, and OPO Deaths.</li>
+                    <li>After gaining a clear understanding of the data, performed the next step in the Data Analysis Process: Data Cleaning.</li>
+                    <li>The code for the above step can be found in my <a href="https://github.com/Kalai-code/EDA_Projects/tree/main/ORCHID" target="_blank" style="color: aquamarine;text-decoration: none;">GitHub</a> repository.</li>
+                </ui>
+                <h3>Data Preparation/Cleaning</h3>
+                <p><b>Tool Used: Jupyter Notebook</b></p>
+                
+            </div>
+        </div>
+        
     </body>
 </html>
