@@ -28,14 +28,14 @@ body{
     font-size: 28px;
     color: #7eda8c;
 }
-.intro, .objective, .solution{
+.intro, .objective, .solution, .conclusion, .references, .imgmywork{
     padding: 8px 4%;
 }
-.intro h2, .objective h2, .solution h2{
+.intro h2, .objective h2, .solution h2,.conclusion h2,.references h2, .imgmywork h2{
     padding-right: 10 px;
     color: #178c28;
 }
-.intro p,.objective p, .solution p{
+.intro p,.objective p, .solution p,.conclusion p,.references p{
     padding: 8px 3%;
 }
 .objective ul{
@@ -54,4 +54,10 @@ body{
 }
 .solution ui li{
     padding: 3px 6%;
+}
+.screenshots img{
+    border:2px solid #f5f1f2;
+    height: 350px;
+    margin: 20px;
+    
 }
